@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <h1>Sign Up Form</h1>
+
+    <form action="" method="POST">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="30">
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website">
+
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+
+        <br><br>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <br><br>
+
+        <label for="files">Upload Files</label>
+        <input type="file" id="files" name="files" multiple>
+
+        <br><br>
+
+        <input type="hidden" name="userType" value="student">
+
+        <label for="code">5-Digit Code</label>
+        <input type="text"
+               id="code"
+               name="code"
+               pattern="[0-9]{5}"
+               title="Enter exactly 5 digits">
+
+        <br><br>
+
+        <p>Gender</p>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <p>Hobbies</p>
+
+        <input type="checkbox" id="coding" name="hobbies" value="Coding">
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label>
+
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+
+        <br><br>
+
+        <label for="country">Country</label>
+
+        <select id="country" name="country">
+
+            <optgroup label="Asia">
+                <option>Syria</option>
+                <option>Jordan</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+                <option>Romania</option>
+                <option>Germany</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <label for="notes">Notes</label>
+
+        <textarea id="notes" name="notes" rows="4" cols="30">Welcome!</textarea>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+        <button type="button">Cancel</button>
+
+    </form>
+
+</body>
+
+</html>
