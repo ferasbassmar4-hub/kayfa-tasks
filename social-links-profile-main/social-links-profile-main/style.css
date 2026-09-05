@@ -1,0 +1,71 @@
+@font-face {
+    font-family: inter;
+    src: url(assets\fonts\Inter-VariableFont_slnt,wght.ttf);
+}
+body{
+    margin: 0%;
+    background-color: hsl(0,0%, 8%);
+    font-family:"inter", sans-serif;
+}
+
+main{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.profile-card{
+background-color: hsl(0, 0%, 12%);
+padding: 40px;
+width: 420px;
+border-radius: 12px;
+text-align: center;
+}
+.profile-card img{
+width: 90px;
+height: 90px;
+border-radius: 50px;
+}
+.profile-card h1{
+    color: white;
+    font-size: 24px;
+}
+.profile-card    .location{
+    color: hsl( 75 , 94% , 57%);
+    font-weight: bold;
+} 
+.profile-card p{
+    color: white;
+
+}
+.profile-card a{
+display: block;
+margin-top: 16px;
+background-color: hsl(0, 0%, 20%);
+color: white;
+padding: 12px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+
+}
+.profile-card a:hover{
+    background-color: hsl( 75 , 94% , 57%);
+    color: hsl(0, 0% , 8%);
+}
+.profile-card a:focus{
+outline: 2px solid hsl( 75 , 94% , 57%);
+outline-offset: 3px;
+}
+@media (max-width:600px){
+.profile-card{
+width: 280px;
+padding: 24;
+
+}
+
+}
+.attribution{
+color: white;
+
+}

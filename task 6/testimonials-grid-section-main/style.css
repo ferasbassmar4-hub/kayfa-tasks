@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  src: url('./fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  src: url('./fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.user-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.user-status {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.quote-lead {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.quote-body {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+.card-purple {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+  grid-column: 1 / span 2;
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 right 80px;
+}
+
+.card-purple .user-img {
+  border: 2px solid hsl(264, 82%, 70%);
+}
+
+.card-gray {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  grid-column: 3 / span 1;
+}
+
+.card-dark {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  grid-column: 2 / span 2;
+}
+
+.card-dark .user-img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.card-white {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+
+.card-jeanette {
+  grid-column: 1 / span 1;
+}
+
+.card-kira {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-purple {
+    grid-column: 1 / span 2;
+  }
+
+  .card-gray {
+    grid-column: 1 / span 2;
+  }
+
+  .card-jeanette {
+    grid-column: 1 / span 2;
+  }
+
+  .card-dark {
+    grid-column: 1 / span 2;
+  }
+
+  .card-kira {
+    grid-column: 1 / span 2;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-purple,
+  .card-gray,
+  .card-jeanette,
+  .card-dark,
+  .card-kira {
+    grid-column: 1 / span 1;
+  }
+}

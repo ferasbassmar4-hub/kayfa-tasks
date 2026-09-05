@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Results summary component</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; margin-top: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="result-card">
+    
+    <!-- Result Section -->
+    <section class="result-box">
+      <h1 class="result-title">Your Result</h1>
+      <div class="circle-score">
+        <span class="score">76</span>
+        <span class="max-score">of 100</span>
+      </div>
+      <h2 class="grade">Great</h2>
+      <p class="description">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary-box">
+      <h2 class="summary-title">Summary</h2>
+
+      <div class="summary-items">
+        
+        <div class="item reaction">
+          <div class="item-title">
+            <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+            <span>Reaction</span>
+          </div>
+          <p class="score-text"><b>80</b> / 100</p>
+        </div>
+
+        <div class="item memory">
+          <div class="item-title">
+            <img src="./assets/images/icon-memory.svg" alt="Memory Icon">
+            <span>Memory</span>
+          </div>
+          <p class="score-text"><b>92</b> / 100</p>
+        </div>
+
+        <div class="item verbal">
+          <div class="item-title">
+            <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon">
+            <span>Verbal</span>
+          </div>
+          <p class="score-text"><b>61</b> / 100</p>
+        </div>
+
+        <div class="item visual">
+          <div class="item-title">
+            <img src="./assets/images/icon-visual.svg" alt="Visual Icon">
+            <span>Visual</span>
+          </div>
+          <p class="score-text"><b>72</b> / 100</p>
+        </div>
+
+      </div>
+
+      <button class="btn-continue">Continue</button>
+    </section>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+</body>
+</html>
